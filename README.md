@@ -70,6 +70,27 @@ flutter run --v
 Summarify features a straightforward and user-friendly interface, designed to facilitate a seamless experience for users engaging in text summarization. This section provides insights into the key screens of the app.
 
 ```diff
+@@ Create Workspace Screen: @@
+```
+> Overview :
+
+> The "Create Workspace" screen in Summarify allows users to establish a dedicated workspace, enhancing organization and customization of their summarization activities.
+
+- **Text Input Field :**
+
+Allows users to enter the desired name for their workspace.
+
+- **Validation Messages :**
+  
+Displays real-time messages to guide users through the input validation process.
+
+- **Create Workspace Button :**
+
+Initiates the creation of the workspace upon a user's confirmation.
+
+![workspace](https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/e3a399f7-db77-42fb-ae17-b9d0fcacdda7)
+
+```diff
 @@ Home Screen : @@
 ```
 
