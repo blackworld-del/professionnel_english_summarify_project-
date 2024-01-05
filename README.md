@@ -392,3 +392,16 @@ sequenceDiagram
 
 
 ```
+
+## Troubleshooting
+
+> While Summarify aims to provide a seamless experience, users may encounter certain limitations or issues. Below are common scenarios and recommended solutions:
+
+
+
+**Unsupported File or URL Content:**
+
+```diff
+- Issue: Summarify currently supports text input only and does not handle file uploads or URL scraping.
++ Solution: Ensure that the input provided is plain text. If you encounter issues, copy and paste the relevant text directly into the app.
+```
