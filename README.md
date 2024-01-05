@@ -76,14 +76,10 @@ The home screen acts as a central hub, presenting users with an organized view o
 #### <span style="color:green;">**Saved Texts List** :</span>
 
 Displays a list of all texts previously saved by the user.
-#### **Navigation Bar** :
+
+```diff
+@@ #### **Navigation Bar** : @@
+```
 
 Provides quick access to other screens, including the text input screen and individual saved results.
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
