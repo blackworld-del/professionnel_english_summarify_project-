@@ -403,14 +403,46 @@ sequenceDiagram
 
 ```diff
 - Issue: Summarify currently supports text input only and does not handle file uploads or URL scraping.
-+ Solution: Ensure that the input provided is plain text. If you encounter issues,
-copy and paste the relevant text directly into the app.
++ Solution: Ensure that the input provided is plain text. If you encounter issues,copy and paste the relevant text directly into the app.
 ```
 
 **Limited Search Functionality:**
 
 ```diff
 - Issue: The app's search functionality may not cover all aspects, leading to potential difficulties in finding saved texts.
-+ Solution: To efficiently manage your saved texts, consider maintaining clear titles 
-for each summarization. This will aid in easier retrieval using the existing search feature.
++ Solution: To efficiently manage your saved texts, consider maintaining clear titles for each summarization. This will aid in easier retrieval using the existing search feature.
+```
+
+**Unsupported iOS Devices:**
+
+```diff
+- Issue: Summarify is currently available exclusively for Android users, and support for iOS devices is not yet implemented.
++ Solution: We are actively working on expanding Summarify to support iOS devices. Please stay tuned for future updates and releases.
+```
+
+**Network-Related Problems:**
+
+```diff
+- Issue: Users may experience connectivity issues or delays in the app due to network-related problems.
++ Solution:
+# Ensure that your device has a stable internet connection.
+# If using Summarify offline, make sure the content you want to summarize is already saved within the app.
+```
+
+**App Crashes:**
+
+```diff
+- Issue: Users may encounter app crashes, which can be caused by various factors.
++ Solution:
+# Ensure you are using the latest version of Summarify from the respective app store.
+# If the issue persists, uninstall and reinstall the app to resolve potential corruption.
+```
+
+**Performance Optimization:**
+
+```diff
+- Issue: Users may experience performance-related issues on older devices or devices with limited resources.
++ Solution:
+# Close background applications to free up device resources.
+# Ensure your device has sufficient available storage space.
 ```
