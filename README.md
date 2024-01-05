@@ -403,5 +403,13 @@ sequenceDiagram
 
 ```diff
 - Issue: Summarify currently supports text input only and does not handle file uploads or URL scraping.
-+ Solution: Ensure that the input provided is plain text. If you encounter issues, copy and paste the relevant text directly into the app.
++ Solution: Ensure that the input provided is plain text. If you encounter issues,
+copy and paste the relevant text directly into the app.
+```
+
+**Limited Search Functionality:**
+
+```diff
+- Issue: The app's search functionality may not cover all aspects, leading to potential difficulties in finding saved texts.
++ Solution: To efficiently manage your saved texts, consider maintaining clear titles for each summarization. This will aid in easier retrieval using the existing search feature.
 ```
