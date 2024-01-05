@@ -149,7 +149,7 @@ Future<Response> makeRequest({
   required String llmText,
 }) async {
   Dio dio = Dio();
-  var url = 'https://proeng.dadahoualid.repl.co/query';
+  var url = 'endpoint here';
   var data = {
     'inputs': llmText,
   };
@@ -200,7 +200,7 @@ void main() async {
 ```
 
 ```diff
-+ inner working of this process : 
++ inner working of this process inside the summarify application : 
 ```
 
 ```mermaid
@@ -226,3 +226,169 @@ sequenceDiagram
 
 ```
 
+## Local Database Integration
+
+> Overview :
+
+The incorporation of a local database within Summarify serves as a crucial element in enhancing the app's functionality and user experience. By utilizing Hive, a lightweight NoSQL database, Summarify achieves key objectives such as data persistence, offline accessibility, improved performance, and efficient management of user preferences. This streamlined integration ensures that users can seamlessly access and manage their summarized texts and workspace information, contributing to a responsive and reliable application experience.
+
+```diff
++ Hive Initialization : 
+```
+
+```dart
+
+import 'package:hive/hive.dart';
+import 'package:path_provider/path_provider.dart' as path_provider;
+
+Future<void> initializeHive() async {
+  final appDocumentDirectory = await path_provider.getApplicationDocumentsDirectory();
+  Hive.init(appDocumentDirectory.path);
+}
+
+```
+
+```diff
++ Opening Hive Boxes : 
+```
+
+```dart
+
+import 'package:hive/hive.dart';
+
+late Box<SummarizeTextSave> summarizeBox;
+late Box workspaceBox;
+
+summarizeBox = Hive.box<SummarizeTextSave>("SumResult");
+workspaceBox = Hive.box('workspace');
+
+```
+
+```diff
++ Saving Summarized Text :
+```
+
+```dart
+
+Future<void> saveSummarizedText(String title, String text) async {
+  final summarizeBox = await openHiveBox('SumResult');
+  summarizeBox.add(SummarizeTextSave(summrizeTitle: title, summarizeTextResult: text));
+}
+
+```
+
+```diff
++ Retrieving Saved Summaries :
+```
+
+```dart
+
+Future<List<SummarizeTextSave>> getSavedSummaries() async {
+  final summarizeBox = await openHiveBox('SumResult');
+  return summarizeBox.values.toList();
+}
+
+```
+
+```diff
++ Deleting a Saved Summary :
+```
+
+```dart
+
+Future<void> deleteSavedSummary(int index) async {
+  final summarizeBox = await openHiveBox('SumResult');
+  summarizeBox.deleteAt(index);
+}
+
+```
+
+```diff
++ Usage Example in Workspace Creation :
+```
+
+```dart
+
+class _SummaryFyWorkspaceState extends State<SummaryFyWorkspace> {
+  TextEditingController contentController = TextEditingController();
+  final _formValidatorKey = GlobalKey<FormState>();
+  late Box workspaceBox;
+
+  @override
+  void initState() {
+    super.initState();
+    workspaceBox = Hive.box('workspace');
+  }
+
+  // ... (other parts of the code)
+
+  GestureDetector(
+    onTap: () {
+      if (_formValidatorKey.currentState!.validate()) {
+        workspaceBox.put(
+          "Workspace Name",
+          contentController.text,
+        );
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) {
+            return SummaryFyBottomNavBarController();
+          }),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("Please Fill correctly the field"),
+            backgroundColor: SummaryfyColors.color_1,
+            duration: Duration(
+              seconds: 1,
+            ),
+          ),
+        );
+      }
+    },
+    child: customButton(
+      // ... (other parts of the code)
+    ),
+  );
+
+  // ... (other parts of the code)
+}
+
+```
+
+```diff
+! inner working of this process inside the summarify application : 
+```
+
+```mermaid
+
+sequenceDiagram
+  participant App as FlutterApp
+  participant Dio as DioLibrary
+  participant Server as ReplServer
+  participant HiveDB as HiveDatabase
+
+  App->>Dio: makeRequest()
+  activate Dio
+  Note over Dio: Imports the Dio library
+  Note over Dio: Sends a POST request to the server
+  Dio->>Server: POST /query
+  activate Server
+  Note over Server: Receives a request at /query endpoint
+  Server->>Server: Process request data
+  Note over Server: Handles the query logic
+  Server-->>Dio: Send response
+  deactivate Server
+  Dio-->>App: Return response
+  deactivate Dio
+
+  App->>HiveDB: Save result to HiveDB
+  activate HiveDB
+  Note over HiveDB: Imports the Hive database library
+  Note over HiveDB: Stores the received result with a user-given name
+  HiveDB-->>App: Result saved successfully
+  deactivate HiveDB
+
+
+```
