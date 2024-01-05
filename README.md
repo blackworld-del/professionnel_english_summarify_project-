@@ -123,14 +123,54 @@ The processed text is fed into the BART algorithm using the llm api from hugging
 
 The generated summary is presented to the user on the summary screen.
 
-```diff
-+ inner working of this process : 
-```
+- **API Integration Code :**
 
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+> Overview :
+
+The following code snippet demonstrates how Summarify integrates with the Language Model API (LLM API) for text summarization.
+
+```diff
+! makeRequest Function : 
+```
+The **makeRequest** function is responsible for making requests to the LLM API and handling the responses.
+
+```dart
+import 'package:dio/dio.dart';
+import 'dart:convert';
+
+/// Makes a request to the Language Model API (LLM API) for text summarization.
+///
+/// Parameters:
+///   - llmText: The input text to be summarized.
+///
+/// Returns:
+///   - A Dio [Response] object containing the API response.
+Future<Response> makeRequest({
+  required String llmText,
+}) async {
+  Dio dio = Dio();
+  var url = 'https://proeng.dadahoualid.repl.co/query';
+  var data = {
+    'inputs': llmText,
+  };
+
+  try {
+    Response response = await dio.post(
+      url,
+      data: jsonEncode(data),
+      options: Options(
+        headers: {
+          'Content-Type': 'application/json; charset=UTF-8',
+        },
+      ),
+    );
+
+    return response;
+  } catch (error) {
+    // Handle any potential errors during the API request.
+    print('Error during API request: $error');
+    throw error;
+  }
+}
+
 ```
