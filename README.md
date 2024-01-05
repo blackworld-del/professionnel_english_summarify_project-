@@ -486,3 +486,35 @@ sequenceDiagram
 # Close background applications to free up device resources.
 # Ensure your device has sufficient available storage space.
 ```
+
+## Future Roadmap
+
+> At Summarify, we are committed to continuous improvement and innovation. Our future roadmap outlines upcoming features, enhancements, and releases aimed at providing users with an even more powerful and seamless text summarization experience.
+
+```diff
++ Upcoming Features:
+```
+
+**Cross-Platform Availability :**
+
+We're actively working on extending Summarify's support to iOS devices, ensuring a broader user base and a consistent experience across platforms.
+
+**Advanced Summarization Techniques :**
+
+Explore and implement advanced summarization techniques to enhance the quality and accuracy of generated summaries.
+
+**Collaborative Workspace :**
+
+Introduce collaborative features, allowing users to create and share workspaces with colleagues or teams, fostering a collaborative text summarization environment.
+
+```diff
++ Enhancements :
+```
+
+**User-Interface Refinement :**
+
+Continuously refine and optimize the user interface for an even more intuitive and aesthetically pleasing experience.
+
+**Improved Search Functionality :**
+
+Enhance the search functionality to provide users with more efficient ways to find and retrieve their saved texts.
