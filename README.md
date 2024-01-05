@@ -39,7 +39,7 @@ cd lib
 ```
 ## open the pubsec.yaml and install all the dependecies : 
 
-```flutter
+```java
 cupertino_icons: ^1.0.2
 build_runner: ^2.4.7
 dio: ^5.3.4
