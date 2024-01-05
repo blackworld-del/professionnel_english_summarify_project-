@@ -574,4 +574,4 @@ Enhance the search functionality to provide users with more efficient ways to fi
 
 ## Authors / Developer
 
-- [@octokatherine](https://github.com/BuddyBytes)
+- [@OUALID DADAH](https://github.com/BuddyBytes)
