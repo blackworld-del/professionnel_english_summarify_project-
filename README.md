@@ -411,5 +411,6 @@ copy and paste the relevant text directly into the app.
 
 ```diff
 - Issue: The app's search functionality may not cover all aspects, leading to potential difficulties in finding saved texts.
-+ Solution: To efficiently manage your saved texts, consider maintaining clear titles for each summarization. This will aid in easier retrieval using the existing search feature.
++ Solution: To efficiently manage your saved texts, consider maintaining clear titles 
+for each summarization. This will aid in easier retrieval using the existing search feature.
 ```
