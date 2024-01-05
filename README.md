@@ -275,7 +275,7 @@ sequenceDiagram
 The Flask application consists of two main routes:
 
 ```diff
-@@ Home Route ("/") :
+@@ Home Route ("/") :@@
 ```
 
 - Displays information about the Hugging Face API on the home page.
@@ -297,7 +297,7 @@ def home():
 ```
 
 ```diff
-@@ Query Route ("/query") :
+@@ Query Route ("/query") :@@
 ```
 
 - Handles incoming POST requests containing text to be summarized.
@@ -340,6 +340,22 @@ if __name__ == '__main__':
 > Usage in Summarify App :
 
 The Summarify app communicates with this Flask middle bridge by sending POST requests to the /query endpoint. The middle bridge then forwards these requests to the Hugging Face API and returns the API's response to the app, facilitating the text summarization process.
+
+```diff
++ inner working for this process :
+```
+
+```mermaid
+sequenceDiagram
+  App->>MiddleBridge: POST /query { text: "Sample text to summarize" }
+  activate MiddleBridge
+  MiddleBridge->>HFAPI: POST /models/facebook/bart-large-cnn { inputs: "Sample text to summarize" }
+  activate HFAPI
+  HFAPI-->>MiddleBridge: Summarized text response
+  deactivate HFAPI
+  MiddleBridge-->>App: Summarized text response
+  deactivate MiddleBridge
+```
 
 
 ## Local Database Integration
