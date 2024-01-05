@@ -16,3 +16,18 @@
 	By leveraging state-of-the-art natural language processing techniques, 
 	the app provides users with concise and coherent summaries of input text, 
 	streamlining information consumption.
+
+## Installation
+
+
+> Thank you for your interest in Summarify  the text summarization app designed exclusively for Android users. While the app is not currently available for installation, we're diligently working to bring you an exceptional experience on the Android platform.
+
+**Developers Installation Guide**
+
+Clone the Repository:
+
+Clone the Summarify Beta repository using the following command in your terminal:
+
+```bash
+git clone https://github.com/summarify/beta.git
+```
