@@ -51,6 +51,11 @@ hive_flutter: ^1.1.0
 hive_generator: ^2.0.1
 salomon_bottom_bar: ^3.3.2
 ```
+## flutter version : 
+
+```java
+Flutter : 3.16.0
+```
 
 - open terminal window in the **main** file and run this command:
   
