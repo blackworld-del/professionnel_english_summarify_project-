@@ -266,6 +266,82 @@ sequenceDiagram
 
 ```
 
+## Middle Bridge between Summarify App and Hugging Face API
+
+> In Summarify, a middle bridge is implemented using Flask to connect the mobile application with the Hugging Face API for text summarization. This section provides a detailed overview of the code and functionality of this middle bridge.
+
+**Flask Application :**
+
+The Flask application consists of two main routes:
+
+```diff
+@@ Home Route ("/") :
+```
+
+- Displays information about the Hugging Face API on the home page.
+- Renders the home page template (index.html).
+- Retrieves API information through a GET request to the Hugging Face API.
+
+```python
+
+@app.route('/')
+def home():
+    try:
+        response = requests.get(API_URL, headers=HEADERS)
+        api_info = response.json()
+
+        return render_template('index.html', api_info=api_info)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+```
+
+```diff
+@@ Query Route ("/query") :
+```
+
+- Handles incoming POST requests containing text to be summarized.
+- Forwards the text payload to the Hugging Face API using a POST request.
+- Returns the API response to the Summarify app.
+
+```python
+
+@app.route('/query', methods=['POST'])
+def query():
+    try:
+        payload = request.json
+        response = requests.post(API_URL, headers=HEADERS, json=payload)
+        return jsonify(response.json()), response.status_code
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+```
+
+```diff
+- Environment Variable :
+```
+
+The API token required for authorization with the Hugging Face API is stored as an environment variable (my_secret). Ensure that the environment variable is securely configured on the server.
+
+```python
+my_secret = os.environ['Bearer']
+```
+
+```diff
+- Running the Flask Application :
+```
+
+The Flask application is configured to run on host='0.0.0.0' and port=8080. Adjust these settings as needed based on your deployment environment.
+
+```python
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
+```
+> Usage in Summarify App :
+
+The Summarify app communicates with this Flask middle bridge by sending POST requests to the /query endpoint. The middle bridge then forwards these requests to the Hugging Face API and returns the API's response to the app, facilitating the text summarization process.
+
+
 ## Local Database Integration
 
 > Overview :
@@ -572,6 +648,6 @@ Enhance the search functionality to provide users with more efficient ways to fi
 
 ---
 
-## Authors / Developer
+## Author / Developer
 
 - [@OUALID DADAH](https://github.com/BuddyBytes)
