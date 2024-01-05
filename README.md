@@ -28,6 +28,6 @@ Clone the Repository:
 
 Clone the Summarify Beta repository using the following command in your terminal:
 
-```bash
+```dart
 git clone https://github.com/summarify/beta.git
 ```
