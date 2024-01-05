@@ -174,3 +174,55 @@ Future<Response> makeRequest({
 }
 
 ```
+
+```diff
+! Usage Example: : 
+```
+
+```dart
+// Example usage of the makeRequest function
+void main() async {
+  try {
+    String inputText = "This is the input text to be summarized.";
+    Response apiResponse = await makeRequest(llmText: inputText);
+
+    // Access the summarized text from the API response
+    String summarizedText = apiResponse.data['outputs'];
+
+    // Perform further actions with the summarized text
+    print('Summarized Text: $summarizedText');
+  } catch (error) {
+    // Handle errors, if any
+    print('An error occurred: $error');
+  }
+}
+
+```
+
+```diff
++ inner working of this process : 
+```
+
+```mermaid
+
+sequenceDiagram
+  participant App as FlutterApp
+  participant Dio as DioLibrary
+  participant Server as ReplServer
+
+  App->>Dio: makeRequest()
+  activate Dio
+  Note over Dio: Imports the Dio library
+  Note over Dio: Sends a POST request to the server
+  Dio->>Server: POST /query
+  activate Server
+  Note over Server: Receives a request at /query endpoint
+  Server->>Server: Process request data
+  Note over Server: Handles the query logic
+  Server-->>Dio: Send response
+  deactivate Server
+  Dio-->>App: Return response
+  deactivate Dio
+
+```
+
