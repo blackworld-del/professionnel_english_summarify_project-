@@ -76,7 +76,7 @@ Summarify features a straightforward and user-friendly interface, designed to fa
 ! screenshot :
 ```
 
-<img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/e3a399f7-db77-42fb-ae17-b9d0fcacdda7" width="300" height="200">
+<img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/e3a399f7-db77-42fb-ae17-b9d0fcacdda7" width="200" height="400">
 
 > The "Create Workspace" screen in Summarify allows users to establish a dedicated workspace, enhancing organization and customization of their summarization activities.
 
