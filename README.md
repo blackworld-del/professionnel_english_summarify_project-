@@ -73,7 +73,7 @@ Summarify features a straightforward and user-friendly interface, designed to fa
 
 The home screen acts as a central hub, presenting users with an organized view of all previously saved texts.
 
-#### **Saved Texts List** :
+<span style="color:green;">#### **Saved Texts List** :</span>
 
 Displays a list of all texts previously saved by the user.
 #### **Navigation Bar** :
