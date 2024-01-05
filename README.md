@@ -38,7 +38,7 @@ git clone https://github.com/summarify/beta.git
 cd lib
 ```
 
-- open terminal window in the main file and run this command:
+- open terminal window in the **main** file and run this command:
   
 ```ruby
 flutter run --v
