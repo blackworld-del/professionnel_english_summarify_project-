@@ -62,3 +62,20 @@ salomon_bottom_bar: ^3.3.2
 ```ruby
 flutter run --v
 ```
+
+## User Interface : 
+
+> Overview :
+
+Summarify features a straightforward and user-friendly interface, designed to facilitate a seamless experience for users engaging in text summarization. This section provides insights into the key screens of the app.
+
+### Home Screen :
+
+The home screen acts as a central hub, presenting users with an organized view of all previously saved texts.
+
+#### **Saved Texts List** :
+
+Displays a list of all texts previously saved by the user.
+#### **Navigation Bar** :
+
+Provides quick access to other screens, including the text input screen and individual saved results.
