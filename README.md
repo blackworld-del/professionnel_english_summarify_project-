@@ -72,6 +72,10 @@ Summarify features a straightforward and user-friendly interface, designed to fa
 ```diff
 @@ Create Workspace Screen: @@
 ```
+
+> The "Create Workspace" screen in Summarify allows users to establish a dedicated workspace, enhancing organization and customization of their summarization activities.
+
+
 ```diff
 ! workspace screenshot :
 ```
@@ -79,8 +83,6 @@ Summarify features a straightforward and user-friendly interface, designed to fa
 <img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/e3a399f7-db77-42fb-ae17-b9d0fcacdda7" width="200" height="450">
 
 <br>
-
-> The "Create Workspace" screen in Summarify allows users to establish a dedicated workspace, enhancing organization and customization of their summarization activities.
 
 - **Text Input Field :**
 
@@ -100,6 +102,13 @@ Initiates the creation of the workspace upon a user's confirmation.
 ```
 
 > The home screen acts as a central hub, presenting users with an organized view of all previously saved texts.
+
+```diff
+@@ Home Screen screenshot : @@
+```
+
+<img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/905a2ae0-91f3-4666-82c7-a672cdfddd6e" width="200" height="450">
+
 
 - **Saved Texts List :**
 
