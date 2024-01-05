@@ -19,10 +19,15 @@
 
 ## Installation
 
-
 > Thank you for your interest in Summarify  the text summarization app designed exclusively for Android users. While the app is not currently available for installation, we're diligently working to bring you an exceptional experience on the Android platform.
 
 **Developers Installation Guide**
+
+## flutter version : 
+
+```java
+Flutter : 3.16.0
+```
 
 - Clone the Repository:
 
@@ -50,11 +55,6 @@ hexcolor: ^3.0.1
 hive_flutter: ^1.1.0
 hive_generator: ^2.0.1
 salomon_bottom_bar: ^3.3.2
-```
-## flutter version : 
-
-```java
-Flutter : 3.16.0
 ```
 
 - open terminal window in the **main** file and run this command:
