@@ -444,6 +444,7 @@ sequenceDiagram
 ```
 
 > Permission Reason: Summarify may request access to device storage to save and retrieve summarized texts. This ensures that users can easily manage and access their saved summaries.
+
 > How to Manage: Users can manage storage access in the device settings. Navigate to "Settings" > "Apps" > "Summarify" > "Permissions" to adjust storage permissions.
 Internet Connection:
 
@@ -452,6 +453,7 @@ Internet Connection:
 ```
 
 > Permission Reason: Summarify relies on an internet connection to interact with the BART algorithm and provide users with accurate text summarization.
+
 > How to Manage: Users should ensure their device has an active and stable internet connection for optimal app functionality.
 Camera and Microphone Access (if applicable):
 
@@ -460,6 +462,7 @@ Camera and Microphone Access (if applicable):
 ```
 
 > Permission Reason: Summarify does not currently require camera or microphone access. If future updates include features that necessitate these permissions, clear explanations will be provided.
+
 > How to Manage: Users can manage camera and microphone access in the device settings under "App Permissions."
 Device Identity and Call Information (if applicable):
 
@@ -468,6 +471,7 @@ Device Identity and Call Information (if applicable):
 ```
 
 > Permission Reason: Summarify does not request access to device identity or call information. The app's functionality does not rely on these permissions.
+
 > How to Manage: Users can review and manage app permissions in the device settings under "App Permissions."
 Location Access (if applicable):
 
@@ -476,6 +480,7 @@ Location Access (if applicable):
 ```
 
 > Permission Reason: Summarify does not require access to user location. Location services are not used in the app's current functionality.
+
 > How to Manage: Users can manage location access in the device settings under "App Permissions."
 
 
