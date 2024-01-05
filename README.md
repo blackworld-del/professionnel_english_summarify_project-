@@ -104,3 +104,33 @@ Displays the summarized text produced by the BART algorithm.
 - **Svae Button :**
 
   button for saving the result from the api response
+
+## Text Summarization Process :
+
+> How it Works :
+
+The text summarization process within Summarify involves leveraging BART algorithms. BART, being a state-of-the-art Large Language Model, excels in sequence-to-sequence tasks, making it ideal for text summarization. The app breaks down the summarization process into the following steps:
+
+- **Input Text Processing :**
+
+The user-provided text undergoes preprocessing to enhance the efficiency of the summarization algorithm.
+
+- **BART Algorithm Execution :**
+
+The processed text is fed into the BART algorithm using the llm api from huggingface, which generates a coherent summary.
+
+- **Summary Presentation :**
+
+The generated summary is presented to the user on the summary screen.
+
+```diff
++ inner working of this process : 
+```
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
