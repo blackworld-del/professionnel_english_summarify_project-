@@ -37,6 +37,20 @@ git clone https://github.com/summarify/beta.git
 ```ruby
 cd lib
 ```
+## open the pubsec.yaml and install all the dependecies : 
+
+```flutter
+cupertino_icons: ^1.0.2
+build_runner: ^2.4.7
+dio: ^5.3.4
+fluentui_system_icons: ^1.1.222
+flutter_lints: ^2.0.0
+gap: ^3.0.1
+hexcolor: ^3.0.1
+hive_flutter: ^1.1.0
+hive_generator: ^2.0.1
+salomon_bottom_bar: ^3.3.2
+```
 
 - open terminal window in the **main** file and run this command:
   
