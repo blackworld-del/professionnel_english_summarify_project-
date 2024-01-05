@@ -24,10 +24,22 @@
 
 **Developers Installation Guide**
 
-Clone the Repository:
+- Clone the Repository:
 
 Clone the Summarify Beta repository using the following command in your terminal:
 
 ```ruby
 git clone https://github.com/summarify/beta.git
+```
+
+- Navigate to the Project Directory:
+- 
+```ruby
+cd lib
+```
+
+- open terminal window in the main file and run this command:
+- 
+```ruby
+flutter run --v
 ```
