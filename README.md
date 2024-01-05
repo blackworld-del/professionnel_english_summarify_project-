@@ -69,17 +69,38 @@ flutter run --v
 
 Summarify features a straightforward and user-friendly interface, designed to facilitate a seamless experience for users engaging in text summarization. This section provides insights into the key screens of the app.
 
-### Home Screen :
-
-The home screen acts as a central hub, presenting users with an organized view of all previously saved texts.
-
-#### <span style="color:green;">**Saved Texts List** :</span>
-
-Displays a list of all texts previously saved by the user.
-
 ```diff
-@@ #### **Navigation Bar** : @@
+@@ Home Screen : @@
 ```
 
-Provides quick access to other screens, including the text input screen and individual saved results.
+> The home screen acts as a central hub, presenting users with an organized view of all previously saved texts.
 
+- **Saved Texts List :**
+
+1 .Displays a list of all texts previously saved by the user.
+2 .button for creating new process for summarize
+
+- **Navigation Bar :**
+
+Provides quick access to other screens, including the text profile screen and search screen.
+
+```diff
+@@ Text Input Screen : @@
+```
+> This screen allows users to input text for summarization and view the generated result.
+
+- **Input Text Field :**
+
+Allows users to input or paste the text they wish to summarize.
+
+- **Summarize Button :**
+
+Initiates the text summarization process
+
+- **Generated Summary :**
+
+Displays the summarized text produced by the BART algorithm.
+
+- **Svae Button :**
+
+  button for saving the result from the api response
