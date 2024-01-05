@@ -73,7 +73,7 @@ Summarify features a straightforward and user-friendly interface, designed to fa
 @@ Create Workspace Screen: @@
 ```
 ```diff
-! screenshot :
+! workspace screenshot :
 ```
 
 <img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/e3a399f7-db77-42fb-ae17-b9d0fcacdda7" width="200" height="450">
@@ -114,6 +114,11 @@ Provides quick access to other screens, including the text profile screen and se
 @@ Text Input Screen : @@
 ```
 > This screen allows users to input text for summarization and view the generated result.
+
+```diff
+@@ Input Screen screenshot : @@
+```
+<img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/4dfdf954-3b41-4da7-8f6d-2e922496b746" width="200" height="450">
 
 - **Input Text Field :**
 
