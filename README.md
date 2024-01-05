@@ -569,3 +569,9 @@ Continuously refine and optimize the user interface for an even more intuitive a
 **Improved Search Functionality :**
 
 Enhance the search functionality to provide users with more efficient ways to find and retrieve their saved texts.
+
+---
+
+## Authors / Developer
+
+- [@octokatherine](https://github.com/BuddyBytes)
