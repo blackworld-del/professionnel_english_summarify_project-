@@ -33,13 +33,13 @@ git clone https://github.com/summarify/beta.git
 ```
 
 - Navigate to the Project Directory:
-- 
+  
 ```ruby
 cd lib
 ```
 
 - open terminal window in the main file and run this command:
-- 
+  
 ```ruby
 flutter run --v
 ```
