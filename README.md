@@ -28,8 +28,6 @@ Clone the Repository:
 
 Clone the Summarify Beta repository using the following command in your terminal:
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```bash
+git clone https://github.com/summarify/beta.git
 ```
