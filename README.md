@@ -79,3 +79,11 @@ Displays a list of all texts previously saved by the user.
 #### **Navigation Bar** :
 
 Provides quick access to other screens, including the text input screen and individual saved results.
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
