@@ -1,3 +1,4 @@
+
 ### Introduction
 
 > **Purpose of the Document**
@@ -79,9 +80,9 @@ Summarify features a straightforward and user-friendly interface, designed to fa
 ```diff
 ! workspace screenshot :
 ```
-
+<p  align="center">
 <img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/e3a399f7-db77-42fb-ae17-b9d0fcacdda7" width="200" height="450">
-
+</p>
 <br>
 
 - **Text Input Field :**
@@ -107,8 +108,9 @@ Initiates the creation of the workspace upon a user's confirmation.
 @@ Home Screen screenshot : @@
 ```
 
+<p  align="center">
 <img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/905a2ae0-91f3-4666-82c7-a672cdfddd6e" width="200" height="450">
-
+</p>
 
 - **Saved Texts List :**
 
@@ -127,7 +129,9 @@ Provides quick access to other screens, including the text profile screen and se
 ```diff
 @@ Input Screen screenshot : @@
 ```
+<p  align="center">
 <img src="https://github.com/BuddyBytes/professionnel_english_summarify_project-/assets/70378708/4dfdf954-3b41-4da7-8f6d-2e922496b746" width="200" height="450">
+</p>
 
 - **Input Text Field :**
 
