@@ -141,7 +141,7 @@ Initiates the text summarization process
 
 Displays the summarized text produced by the BART algorithm.
 
-- **Svae Button :**
+- **Save Button :**
 
   button for saving the result from the api response
 
@@ -664,6 +664,11 @@ Enhance the search functionality to provide users with more efficient ways to fi
 
 ---
 
-## Author / Developer
+## Author 
 
+- [@OUALID DADAH](https://github.com/BuddyBytes)
+- HEBE
+- Afrin
+
+## Developer 
 - [@OUALID DADAH](https://github.com/BuddyBytes)
